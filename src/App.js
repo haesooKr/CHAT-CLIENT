@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Join from './components/Join'
 import Chat from './components/Chat'
 
-export const App = () => {
+const App = () => {
   return (
     <Router>
       <Route path="/" exact component={Join} />
@@ -13,3 +13,5 @@ export const App = () => {
     </Router>
   )
 }
+
+export default App;
