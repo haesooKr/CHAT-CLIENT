@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Join.css';
@@ -7,6 +7,13 @@ const Join = () => {
   const [name, setName] = useState('');
   const [room, setRoom] = useState('');
 
+  useEffect(() => {
+    if(name.length > 6){
+      alert('Name should be less than 7 characters');
+      document.querySelector('.joinInput').value = '';
+      setName('');
+    }
+  }, [name])
 
   return (
     <div className="joinOuterContainer">
