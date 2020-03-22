@@ -15,10 +15,13 @@
   width: 35%;
 }
 .sideContainer {
+  display: flex;
+  justify-content: center;
   height: 60%;
-  overflow-x: scroll;
+  min-width: 100px;
+  width: 10%;
   color: white;
-  background-color: #2979FF;
+  background-color: rgba(0, 92, 252, 0.479);
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -31,7 +34,7 @@
     height: 100%;
   }
   .sideContainer {
-    height: 100%;
+    display: none;
   }
 }
 
